@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- Estilos  -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/keyframes.css">
+</head>
+
+<body>
+    <div class="figures top">
+        <div class="square"></div>
+        <div class="circle"></div>
+    </div>
+    <!----------------------------->
+    <!-- Encabezado de la pagina -->
+    <!----------------------------->
+    <header>
+        <nav class="nav-bar flex-center">
+            <!-- Logo de la pagina -->
+            <div class="logo">
+                <a href="./index.html"><img src="./img/logo.svg" alt=""></a>
+            </div>
+            <!-- Menu con los links -->
+            <div class="nav-bar-link" id="nav-bar-link">
+                <ul>
+                    <!-- <div id="btn"><span class="noselect">Hello</span><div id="circle"></div> -->
+                    <li><a href="#">Pricing</a>
+                        <div class="circle">
+                    </li>
+                    <li><a href="#">Product</a>
+                        <div class="circle">
+                    </li>
+                    <li><a href="#">About Us</a>
+                        <div class="circle">
+                    </li>
+                    <li><a href="#">Careers</a>
+                        <div class="circle">
+                    </li>
+                    <li><a href="#">Community</a>
+                        <div class="circle">
+                    </li>
+                </ul>
+            </div>
+            <!-- Boton en el menu -->
+            <button id="nav-bar-bttn">Get Started</button>
+
+            <!-- Icono hamburguesa para mobile -->
+            <a class="toggle-bttn" id="toggle-bttn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Sección para las gráficas -->
+    <section class="flex-center" id="products">
+        <div class="products">
+            <h1>Bring everyone together to build better products.</h1>
+            <p>Manage makes it simple for software teams to plan day-to-day tasks while keeping the large team goals in
+                view </p>
+            <button>Get Started</button>
+        </div>
+        <div class="graphics">
+            <div class="graphic">
+                <img src="./img/illustration-intro.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección para la pregunta y listado de puntos -->
+    <section class="flex-center" id="about">
+        <div class="about-column question">
+            <h2>What's different about Manage? </h2>
+            <p>Manage provides all the functionality your teas needs, without the complexity. Our software is
+                tailor-made for modern digital product teams</p>
+        </div>
+
+        <!-- Lista de los diferntes puntos de la pregunta -->
+        <div class="about-column list-points">
+            <div class="point">
+                <div class="point-title">
+                    <div class="point-number">01</div>
+                    <p>Track company-wide progress</p>
+                </div>
+                <div class="point-info">
+                    <p class="point-txt">See how your day-to-day tasks fit into the wider vision. Go from tracking
+                        progress
+                        at he milestone level all the way done to the smallest of details. Never lose sight of the
+                        bigger
+                        picture again.</p>
+                </div>
+            </div>
+            <div class="point">
+                <div class="point-title">
+                    <div class="point-number">02</div>
+                    <p>Advance built-in reports</p>
+                </div>
+                <div class="point-info">
+                    <p class="point-txt">SSet internal delivery estimates and track progress toward company goals. Our
+                        customisable dashboard helps you build out the reports you need to keep key stakeholders
+                        informed.
+                    </p>
+                </div>
+            </div>
+            <div class="point">
+                <div class="point-title">
+                    <div class="point-number">03</div>
+                    <p>Everything you need in one place</p>
+                </div>
+                <div class="point-info">
+                    <p class="point-txt">Stop jumping from one service to another to communicate, store files, track
+                        tasks
+                        and share documents. Manage offers an all-in-one team productivity solution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección para las opiniones -->
+    <section id="opinions">
+        <h2>What they've said</h2>
+        <div class="opinion-container">
+            <div class="opinion active-opinion">
+                <div class="avatar">
+                    <img src="./img/avatar-ali.png" alt="">
+                </div>
+                <div class="txt">
+                    <p class="name">Ali Bravo</p>
+                    <p class="comment">“Manage has supercharged our team's workflow. The ability to maintain visibility
+                        on
+                        larger milestones at all times keeps everyone motivated.”</p>
+                </div>
+            </div>
+            <div class="opinion">
+                <div class="avatar">
+                    <img src="./img/avatar-anisha.png" alt="">
+                </div>
+                <div class="txt">
+                    <p class="name">Ali Bravo</p>
+                    <p class="comment">“We have been able to cancel so many other subscriptions since using manage.
+                        There ir
+                        no more cross-channel confusion and everyone is much more focused.”</p>
+                </div>
+            </div>
+            <div class="opinion">
+                <div class="avatar">
+                    <img src="./img/avatar-richard.png" alt="">
+                </div>
+                <div class="txt">
+                    <p class="name">Ali Bravo</p>
+                    <p class="comment">“Manage allows us to provide structure and process. It keeps us organized and
+                        focused. I can't stop recommending them to everyone i talk to!”</p>
+                </div>
+            </div>
+            <div class="opinion">
+                <div class="avatar">
+                    <img src="./img/avatar-shanai.png" alt="">
+                </div>
+                <div class="txt">
+                    <p class="name">Ali Bravo</p>
+                    <p class="comment">“Manage allows us to provide structure and process. It keeps us organized and
+                        focused. I can't stop recommending them to everyone i talk to!”</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botones circulares para el slide -->
+        <div class="nav-slide" id="nav-slide">
+            <!-- Se crean de forma dinamica con js -->
+        </div>
+
+        <div class="bttn-get">
+            <button>Get Started</button>
+        </div>
+    </section>
+
+    <div class="figures bottom">
+        <div class="square"></div>
+        <div class="circle"></div>
+    </div>
+
+    <!-- Pie de pagina -->
+    <footer>
+        <div class="team">
+            <h2>Simplify hoy your team words today.</h2>
+            <button class="bttn-invert">Get Started</button>
+        </div>
+        <div class="info">
+            <div class="cell form">
+                <!-- Formulario -->
+                <form action="" method="">
+                    <input type="email" name="inbox" id="inbox" placeholder="Update in your inbox...">
+                    <button type="submit">Go</button>
+                </form>
+            </div>
+            <div class="cell">
+                <!-- Links en el footer -->
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="cell social-logo">
+                <ul class="social-media">
+                    <li class="icon facebook">
+                        <span class="tooltip">Facebook</span>
+                        <span><i class="fab fa-facebook-f"></i></span>
+                    </li>
+                    <li class="icon youtube">
+                        <span class="tooltip">Youtube</span>
+                        <span><i class="fab fa-youtube"></i></span>
+                    </li>
+                    <li class="icon twitter">
+                        <span class="tooltip">Twitter</span>
+                        <span><i class="fab fa-twitter"></i></span>
+                    </li>
+                    <li class="icon pinterest">
+                        <span class="tooltip">Pinterest</span>
+                        <span><i class="fab fa-pinterest"></i></span>
+                    </li>
+                    <li class="icon instagram">
+                        <span class="tooltip">Instagram</span>
+                        <span><i class="fab fa-instagram"></i></span>
+                    </li>
+                </ul>
+                <div class="logo">
+                    <a href="./index.html"><img src="./img/logo_invert.svg" alt="" class="logo"></a>
+                </div>
+            </div>
+            <div class="cell">
+                <p class="copyright">Copyright 2020. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Index -->
+    <script src="./js/index.js" crossorigin="anonymous"></script>
+
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/99a2b445a2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
